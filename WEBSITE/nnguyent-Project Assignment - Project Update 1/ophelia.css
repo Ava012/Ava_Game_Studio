@@ -97,7 +97,7 @@ nav a:hover {
 #homehero {
     background-image:
         linear-gradient(rgba(13, 27, 42, .25), rgba(13, 27, 42, .25)),
-        url(homehero.jpg);
+        url(images/View.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;

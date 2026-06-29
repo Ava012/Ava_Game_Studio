@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ophelia Fantasy World</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ophelia.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+
+        <img class="logo" src="images/logo.jpg" alt="Ophelia Logo">
+
+        <div class="title">
+            <h1><a href="index.html">Ophelia Fantasy World</a></h1>
+            <p>2D Pixel World • RPG • Adventure Game</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="creatures.html">Creatures</a></li>
+            <li><a href="contact.html">Join the Adventure</a></li>
+            <li><a href="setting.html">Setting</a></li>
+        </ul>
+    </nav>
+
+    <div id="homehero"></div>
+
+    <main>
+    <section class="featured">
+        <img src="images/Shit.png" alt="Featured character">
+        <div>
+            <h2>Welcome to Ophelia</h2>
+            <p>
+                Ophelia is a fantasy world shaped by five ancient elements:
+                Fire, Water, Wood, Metal, and Earth. Each land has its own
+                guardian beast, creatures, and hidden history.
+            </p>
+        </div>
+    </section>
+
+    <section class="updates">
+        <h2>Update</h2>
+        <div class="update-boxes">
+            <a href="creatures.html">Creatures</a>
+            <a href="characters.html">Characters</a>
+            <a href="lore.html">Lore</a>
+            <a href="setting.html">Map</a>
+        </div>
+    </section>
+
+    <section class="overview">
+        <h2>World Overview</h2>
+        <p>
+            Explore Ophelia’s kingdoms, elemental magic, mythical creatures,
+            and the stories of heroes who protect the world.
+        </p>
+        <img src="images/landscape.jpg" alt="Ophelia landscape">
+    </section>
+
+    <section class="creature-carousel">
+        <h2>Featured Creatures</h2>
+
+        <button class="arrow left">&#9664;</button>
+
+            <div class="creature-track">
+                <div class="creature-card">
+                    <img src="images/Enemy_3.png" alt="Creature 1">
+                    <p>
+                    <strong>Creature Description:</strong><br>
+                    Type: Elio/Luna<br>
+                    Skill: Healing<br>
+                    Bundle #: 1
+                    </p>
+                </div>
+
+                <div class="creature-card">
+                    <img src="images/Enemy_4.png" alt="Creature 2">
+                    <p>
+                    <strong>Creature Description:</strong><br>
+                    Type: Elio/Luna<br>
+                    Skill: Shield<br>
+                    Bundle #: 2
+                    </p>
+                </div>
+
+                <div class="creature-card">
+                    <img src="images/Enemy_5.png" alt="Creature 3">
+                    <p>
+                    <strong>Creature Description:</strong><br>
+                    Type: Elio/Luna<br>
+                    Skill: Fire<br>
+                    Bundle #: 3
+                    </p>
+                </div>
+            </div>
+
+        <button class="arrow right">&#9654;</button>
+    </section>
+
+    </main>
+
+    <footer>
+        <h2>Contact</h2>
+
+        <div class="contact-links">
+            <a class="contact-btn"
+                href="https://discord.gg/yourInviteCode"
+                target="_blank">
+                <img src="images/discord_pixel.png" alt="Discord">
+            </a>
+
+            <a class="contact-btn"
+            href="mailto:opheliafantasyworld@gmail.com">
+                <img src="images/gmail_pixel.png" alt="Email">
+            </a>
+
+            <a class="contact-btn"
+                href="https://instagram.com/opheliafantasyworld"
+                target="_blank">
+                <img src="images/instargram_pixel.png" alt="Instagram">
+            </a>
+    </div>
+
+    <p>Copyright &copy; 2026 Ophelia Fantasy World</p>
+</footer>
+
+    </div>
+
+    <script>
+        const track = document.querySelector(".creature-track");
+        const leftArrow = document.querySelector(".left");
+        const rightArrow = document.querySelector(".right");
+
+        leftArrow.addEventListener("click", function() {
+            track.scrollBy({
+                left: -300,
+                behavior: "smooth"
+            });
+        });
+
+        rightArrow.addEventListener("click", function() {
+            track.scrollBy({
+                left: 300,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>

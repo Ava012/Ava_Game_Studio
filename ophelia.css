@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* ============== General ============= */
 body {
     background-color: #0d1b2a;
     color: #f5f5f5;
@@ -263,4 +263,218 @@ strong {
 .contact-btn img{
     width:45px;
     height:45px;
+}
+
+/* ==================== Lore Page ============================ */
+
+.masters {
+    background-color: #1b2d42;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+}
+
+.masters h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.master-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.master-card {
+    width: 19%;
+    background-color: #243d5a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.master-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.master-card h3 {
+    margin-top: 15px;
+}
+
+.master-card ul {
+    text-align: left;
+    padding-left: 18px;
+}
+
+/* ===== Bookmark Story Sections ===== */
+
+.bookmark-section {
+    position: relative;
+    background-color: #1b2d42;
+    min-height: 260px;
+    margin: 70px 0;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.bookmark-card {
+    position: absolute;
+    top: -35px;
+    left: 35px;
+    width: 230px;
+    background-color: #243d5a;
+    padding: 18px;
+    border-radius: 0 0 12px 12px;
+    border: 2px solid #4fd1c5;
+
+    overflow: visible;
+}
+
+.bookmark-card-right{
+    left:auto;
+    right:35px;
+    top:auto;
+    bottom:-35px;
+
+    border-radius:12px 12px 0 0;
+}
+
+
+.bookmark-card img {
+    position: absolute;
+    top: -40px;
+    left: 18px;
+
+    width: 190px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bookmark-card p {
+    margin-top: 145px;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.bookmark-text {
+    margin-left: 270px;
+}
+
+.bookmark-text h2 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.bookmark-text p {
+    line-height: 1.8;
+}
+
+.cyra-text {
+    margin-left: 0;
+    margin-right: 270px;
+    text-align: right;
+}
+
+.cyra-section{
+    min-height:300px;
+}
+
+.zigma-text{
+    margin-left:270px;
+    margin-right:0;
+    text-align:left;
+}
+
+/* ======= Basic type of Creatures ======== */
+.basic-type{
+    background:#1b2d42;
+    padding:40px;
+    margin:60px 0;
+    border-radius:18px;
+}
+
+.basic-type h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#ffffff;
+}
+
+.type-layout{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:35px;
+}
+
+.type-layout img{
+    width:180px;
+    height:240px;
+    object-fit:cover;
+
+    margin-top:-30px;   /* makes the images stand out */
+}
+
+.type-description{
+    width:340px;
+    background:#243d5a;
+    padding:20px;
+    border-radius:12px;
+}
+
+.left{
+    text-align:left;
+}
+
+.right{
+    text-align:right;
+}
+
+.creature-image{
+    width:180px;
+    height:220px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#243d5a;
+    border:2px solid #4fd1c5;
+    border-radius:12px;
+
+    overflow:hidden;
+}
+
+.creature-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+}
+
+/* ======= world Lore ======== */
+.world-lore{
+    background-color:#1b2d42;
+    margin:60px 0;
+    padding:40px 60px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.world-lore h2{
+    text-align:center;
+    color:#ffd166;
+    margin-bottom:25px;
+}
+
+.world-lore p{
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:1.05em;
 }

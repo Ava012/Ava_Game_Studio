@@ -1,111 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pacific Trails Resort :: Reservations</title>
+    <title>Ophelia Fantasy World</title>
     <meta charset="utf-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pacific.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ophelia.css">
 </head>
-
 <body>
 <div id="wrapper">
+    <header>
 
-<header>
-    <h1><a href="index.html">Pacific Trails Resort</a></h1>
-</header>
+        <img class="logo" src="images/logo.jpg" alt="Ophelia Logo">
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="yurts.html">Yurts</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-    </ul>
-</nav>
+        <div class="title">
+            <h1><a href="index.html">Ophelia Fantasy World</a></h1>
+            <p>2D Pixel World • RPG • Adventure Game</p>
+        </div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lore.html">Lore</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="creatures.html">Creatures</a></li>
+            <li><a href="jointheadventure.html">Join the Adventure</a></li>
+            <li><a href="updates.html">Updates</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <h2>Reservations at Pacific Trails</h2>
-    <h3>Contact Us Today!</h3>
-    
-    <p>Required fields are marked with an asterisk *</p>
+    <main>  
 
-    <form method="get" action="https://webdevbasics.net/scripts/pacific.php">
+        <footer>
+            <h2>Contact</h2>
 
-        <label for="myFName">*First Name:</label>
+            <div class="contact-links">
+                <a class="contact-btn"
+                    href="https://discord.gg/yourInviteCode"
+                    target="_blank">
+                    <img src="images/discord_pixel.png" alt="Discord">
+                </a>
 
-        <input
-            type="text"
-            name="myFName"
-            id="myFName"
-            required>
-    
-        <label for="myLName">*Last Name:</label>
-        
-        <input
-            type="text"
-            name="myLName"
-            id="myLName"
-            required>
-        
-        <label for="myEmail">*E-mail:</label>
-        
-        <input
-            type="email"
-            name="myEmail"
-            id="myEmail"
-            required>
-        
-        <label for="myPhone">Phone:</label>
-        
-        <input
-            type="tel"
-            name="myPhone"
-            id="myPhone"
-            maxlength="12">
-        
-        <label for="myArrival">Arrival Date:</label>
+                <a class="contact-btn"
+                    href="mailto:opheliafantasyworld@gmail.com">
+                    <img src="images/gmail_pixel.png" alt="Email">
+                </a>
 
-        <input 
-            type="date" 
-            name="myArrival" 
-            id="myArrival">
+                <a class="contact-btn"
+                    href="https://instagram.com/opheliafantasyworld"
+                    target="_blank">
+                    <img src="images/instargram_pixel.png" alt="Instagram">
+                </a>
+            </div>
 
-        <label for="myNights">Nights:</label>
-    
-        <input
-            type="number"
-            name="myNights"
-            id="myNights"
-            min="1"
-            max="14">
-
-        <label for="myComments">*Comments:</label>
-        
-        <textarea
-            name="myComments"
-            id="myComments"
-            rows="2"
-            cols="30"
-            required>
-        </textarea>
-
-        <input
-        type="submit"
-        value="Submit">
-    </form>
-
-<footer>
-    Copyright &copy; 2026 Pacific Trails Resort<br>
-    <a href="mailto:aava91004@gmail.com">
-    Ngoc Nguyen
-    </a>
-</footer>
-
-</main>
-
+            <p>Copyright &copy; 2026 Ophelia Fantasy World</p>
+        </footer>
+    </main>
 
 </div>
-</body>
-</html>

@@ -467,7 +467,7 @@ strong {
 
 .world-lore h2{
     text-align:center;
-    color:#ffd166;
+    color:#ffffff;
     margin-bottom:25px;
 }
 
@@ -478,3 +478,312 @@ strong {
     line-height:1.8;
     font-size:1.05em;
 }
+
+/* ===== Characters Page ===== */
+
+.character-top{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin:90px 0 40px;
+}
+
+.character-box{
+    position:relative;
+    width:45%;
+    min-height:280px;
+    background:#1b2d42;
+    padding:90px 35px 35px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.circle-img{
+    position:absolute;
+    top:-65px;
+    width:180px;
+    height:180px;
+    background:#111;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.circle-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.circle-img p{
+    position:absolute;
+    color:white;
+    font-weight:bold;
+}
+
+.left-circle{
+    left:-40px;
+}
+
+.right-circle{
+    right:-40px;
+}
+
+.character-box h2{
+    color:#ffd166;
+    text-align:center;
+}
+
+.character-box p{
+    line-height:1.7;
+}
+
+/*=========teamates ==========*/
+
+.teammates{
+    background:#1b2d42;
+    padding:50px 35px;
+    margin:50px 0;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.teammates h2{
+    text-align:center;
+    color:#ffd166;
+    margin-bottom:40px;
+    font-size:2em;
+}
+
+.teammate-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:25px;
+}
+
+.teammate-card{
+    background:#243d5a;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    min-height:360px;
+}
+
+.teammate-card img{
+    display:block;
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    image-rendering:pixelated;
+    margin:0 auto 20px;
+}
+
+.teammate-card h3{
+    color:#ffd166;
+    font-size:1.5em;
+    margin:15px 0;
+}
+
+.teammate-card ul{
+    text-align:left;
+    padding-left:25px;
+    line-height:1.5;
+}
+
+/*========== Enemies ==========*/
+
+.enemies{
+    margin:60px 0;
+}
+
+.enemy-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:45px;
+    margin:45px 0;
+}
+
+.enemy-card{
+    position:relative;
+    background:#243d5a;
+    border-radius:18px;
+    min-height:250px;
+    padding:90px 25px 25px;
+    text-align:left;
+}
+
+.enemy-card img{
+    position:absolute;
+    top:-45px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:180px;
+    height:180px;
+
+    object-fit:contain;
+    image-rendering:pixelated;
+}
+
+.enemy-info h3{
+    position:relative;
+    margin-top:-45px;
+    margin-bottom:30px;
+
+    display:inline-block;
+    padding:6px 18px;
+
+    color:#ffd166;
+    background:#243d5a;
+
+    border:2px solid #4fd1c5;
+    border-radius:8px;
+
+    font-size:1.3em;
+    font-weight:bold;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.25);
+}
+
+.enemy-info ul{
+    line-height:1.6;
+}
+
+.enemies h2{
+    background:#1b2d42;
+    text-align:center;
+    color:#ffd166;
+    padding:15px;
+    border-radius:12px;
+    margin:30px 0;
+}
+
+/* ===== Creatures Page ===== */
+
+.creature-page{
+    margin:40px 0;
+}
+
+.element-section{
+    background:#1b2d42;
+    padding:30px;
+    margin-bottom:35px;
+    border-radius:18px;
+}
+
+.element-section h2{
+    text-align:center;
+    color:#ffd166;
+    margin-bottom:20px;
+}
+
+.slider{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.creature-container{
+    overflow-x:auto;
+    overflow-y:hidden;
+    flex:1;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+}
+
+.creature-container::-webkit-scrollbar{
+    display:none;
+}
+
+.creature-card{
+    min-width:220px;
+    flex-shrink:0;
+
+    background:#243d5a;
+    border-radius:15px;
+    padding:20px;
+
+    text-align:center;
+    transition: .3s;
+    border:2px solid #4fd1c5;
+}
+
+.creature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.creature-card img{
+
+    display:block;
+
+    width:160px;
+    height:160px;
+
+    margin:0 auto 20px;
+
+    object-fit:contain;
+
+    image-rendering:pixelated;
+}
+
+.creature-card h3{
+
+    color:#ffd166;
+
+    margin:10px 0 15px;
+
+    font-size:1.4em;
+}
+
+.creature-card ul{
+
+    text-align:left;
+
+    padding-left:20px;
+
+    line-height:1.6;
+
+    margin-bottom:0;
+
+}
+
+.creature-track{
+    display:flex;
+    gap:25px;
+    transition:transform .4s ease;
+
+}
+
+.creature-track::-webkit-scrollbar{
+    display:none;
+}
+
+.arrow{
+
+    background:none;
+
+    border:none;
+
+    color:#ffd166;
+
+    font-size:2.8em;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.arrow:hover{
+
+    color:#4fd1c5;
+
+    transform:scale(1.2);
+}
+

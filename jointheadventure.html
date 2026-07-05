@@ -29,7 +29,115 @@
         </ul>
     </nav>
 
-    <main>  
+    <main> 
+        
+        <section class="guild-events">
+            <h2>Event for Guild</h2>
+
+            <div class="event-grid">
+                <div class="event-card">
+                    <img src="images/Shit.png" alt="Guild Event">
+                    <h3>Mana Hunt</h3>
+                    <ul>
+                        <li>Level: Easy</li>
+                        <li>Advantage: Mana</li>
+                        <li>Reward: Coins</li>
+                    </ul>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/Shit.png" alt="Guild Event">
+                    <h3>Boss Raid</h3>
+                    <ul>
+                        <li>Level: Hard</li>
+                        <li>Advantage: Teamwork</li>
+                        <li>Reward: Rare item</li>
+                    </ul>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/Shit.png" alt="Guild Event">
+                    <h3>Forest Quest</h3>
+                    <ul>
+                        <li>Level: Medium</li>
+                        <li>Advantage: Healing</li>
+                        <li>Reward: Skill boost</li>
+                    </ul>
+                </div>
+
+                <div class="event-card">
+                    <img src="images/Shit.png" alt="Guild Event">
+                    <h3>Arena Trial</h3>
+                    <ul>
+                        <li>Level: Hard</li>
+                        <li>Advantage: Attack</li>
+                        <li>Reward: Rank points</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="guild-ranking">
+            <h2>Guild Ranking</h2>
+
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name of Guild</th>
+                    <th>Members</th>
+                </tr>
+                <tr><td>1</td><td>Moonlight Guild</td><td>30/30</td></tr>
+                <tr><td>2</td><td>Phoenix Guild</td><td>28/30</td></tr>
+                <tr><td>3</td><td>Dragon Guild</td><td>24/30</td></tr>
+                <tr><td>4</td><td>Forest Guild</td><td>20/30</td></tr>
+                <tr><td>5</td><td>Shadow Guild</td><td>18/30</td></tr>
+            </table>
+        </section>
+
+        <section class="feedback-video">
+
+            <div class="feedback-form">
+                <h2>Feedback for Game</h2>
+
+                <form id="feedbackForm" action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="element">Favorite Element:</label>
+                    <select id="element" name="element">
+                        <option>Fire</option>
+                        <option>Water</option>
+                        <option>Wood</option>
+                        <option>Metal</option>
+                        <option>Earth</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                <div id="thankYouMessage"></div>
+            </div>
+
+            <div class="guild-video">
+                <h2>Guild Video</h2>
+
+                <div class="video-wrapper">
+                    <iframe
+                    src="https://www.youtube.com/embed/_x7fr0q65Kk?si=QmPo9z1PVWWxSpQ8"
+                    title="Guild Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+        </iframe>
+    </div>
+            </div>
+
+        </section>
 
         <footer>
             <h2>Contact</h2>
@@ -58,3 +166,7 @@
     </main>
 
 </div>
+
+<script src="join.js"></script>
+
+</body>
